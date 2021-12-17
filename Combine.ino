@@ -98,10 +98,8 @@ void setup()
   delay(10);
   double lat,lng;
   smartDelay(1000);
-  //lat=tinyGPS.location.lat();
-  //lng=tinyGPS.location.lng();
-  lat=28.665395;
-  lng=77.29642;
+  lat=tinyGPS.location.lat();
+  lng=tinyGPS.location.lng();
   Serial.println(lat);
   Serial.println(lng);
   gpsPort.end();
